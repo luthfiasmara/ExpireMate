@@ -17,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
    
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("yoyo")
         completionHandler(.banner)
     }
     
+//    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+//            // Called when a new scene session is being created.
+//            // Use this method to select a configuration to create the new scene with.
+//            return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+//        }
 }
+
+

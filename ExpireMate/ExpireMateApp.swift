@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
+//import CloudKit
 
 @main
 struct ExpireMateApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var dataController = DataController()
     
-
+    
     var body: some Scene {
-
         WindowGroup{
-            Home()
+            HomeView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }

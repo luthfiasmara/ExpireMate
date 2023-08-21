@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE51D53029FA29D800A47AC3 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51D52F29FA29D800A47AC3 /* History.swift */; };
+		DE56C6DD2A06C23A00283352 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56C6DC2A06C23A00283352 /* CalendarView.swift */; };
+		DE56C6DF2A06C27C00283352 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56C6DE2A06C27C00283352 /* Calendar.swift */; };
+		DE56C6E12A06C84200283352 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56C6E02A06C84200283352 /* Category.swift */; };
+		DE59466F2A8C713A00E7003D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59466E2A8C713A00E7003D /* HomeViewModel.swift */; };
+		DE5946732A930AD200E7003D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5946722A930AD200E7003D /* HomeView.swift */; };
+		DE5946782A93C3B300E7003D /* AddItemModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5946772A93C3B300E7003D /* AddItemModelView.swift */; };
 		DE5B922F29F78EE60027C8A8 /* ExpireMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B922E29F78EE60027C8A8 /* ExpireMateApp.swift */; };
-		DE5B923129F78EE60027C8A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B923029F78EE60027C8A8 /* ContentView.swift */; };
 		DE5B923329F78EE60027C8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5B923229F78EE60027C8A8 /* Assets.xcassets */; };
 		DE5B923629F78EE60027C8A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5B923529F78EE60027C8A8 /* Preview Assets.xcassets */; };
 		DE5B923829F78EE60027C8A8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B923729F78EE60027C8A8 /* Persistence.swift */; };
@@ -16,16 +22,25 @@
 		DE5B924329F78F080027C8A8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B924229F78F080027C8A8 /* Home.swift */; };
 		DE5B924529F78F370027C8A8 /* AddItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B924429F78F370027C8A8 /* AddItems.swift */; };
 		DE5B924829F790D10027C8A8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B924729F790D10027C8A8 /* DataController.swift */; };
-		DE5B924D29F7AA220027C8A8 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B924C29F7AA220027C8A8 /* Notification.swift */; };
 		DE5B924F29F7AEA00027C8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B924E29F7AEA00027C8A8 /* AppDelegate.swift */; };
-		DE5B925629F820CF0027C8A8 /* DataScaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B925529F820CF0027C8A8 /* DataScaner.swift */; };
 		DE5B926829F8BFFE0027C8A8 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DE5B926729F8BFFE0027C8A8 /* CodeScanner */; };
+		DEDC0F1B2A1D0A7C0027D9FB /* ItemListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC0F1A2A1D0A7C0027D9FB /* ItemListing.swift */; };
+		DEDC0F1E2A1D0BB60027D9FB /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC0F1D2A1D0BB60027D9FB /* ItemListViewModel.swift */; };
+		DEDC0F4F2A1FAD610027D9FB /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC0F4E2A1FAD610027D9FB /* Detail.swift */; };
+		DEEB161129FE1B5C00206792 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB161029FE1B5C00206792 /* SceneDelegate.swift */; };
+		DEF54F102A1214E6005763B1 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = DEF54F0F2A1214E6005763B1 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE51D52F29FA29D800A47AC3 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		DE56C6DC2A06C23A00283352 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		DE56C6DE2A06C27C00283352 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		DE56C6E02A06C84200283352 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DE59466E2A8C713A00E7003D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DE5946722A930AD200E7003D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE5946772A93C3B300E7003D /* AddItemModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemModelView.swift; sourceTree = "<group>"; };
 		DE5B922B29F78EE60027C8A8 /* ExpireMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpireMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5B922E29F78EE60027C8A8 /* ExpireMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireMateApp.swift; sourceTree = "<group>"; };
-		DE5B923029F78EE60027C8A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE5B923229F78EE60027C8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5B923529F78EE60027C8A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5B923729F78EE60027C8A8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -34,9 +49,12 @@
 		DE5B924229F78F080027C8A8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DE5B924429F78F370027C8A8 /* AddItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItems.swift; sourceTree = "<group>"; };
 		DE5B924729F790D10027C8A8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		DE5B924C29F7AA220027C8A8 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		DE5B924E29F7AEA00027C8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE5B925529F820CF0027C8A8 /* DataScaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScaner.swift; sourceTree = "<group>"; };
+		DEDC0F182A1D09BE0027D9FB /* ExpireMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpireMate.entitlements; sourceTree = "<group>"; };
+		DEDC0F1A2A1D0A7C0027D9FB /* ItemListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListing.swift; sourceTree = "<group>"; };
+		DEDC0F1D2A1D0BB60027D9FB /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		DEDC0F4E2A1FAD610027D9FB /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		DEEB161029FE1B5C00206792 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +63,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5B926829F8BFFE0027C8A8 /* CodeScanner in Frameworks */,
+				DEF54F102A1214E6005763B1 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE5946702A930AA300E7003D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE5946742A93C37500E7003D /* AddItem */,
+				DE5946712A930AC700E7003D /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE5946712A930AC700E7003D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE5946722A930AD200E7003D /* HomeView.swift */,
+				DE59466E2A8C713A00E7003D /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE5946742A93C37500E7003D /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B924429F78F370027C8A8 /* AddItems.swift */,
+				DE5946772A93C3B300E7003D /* AddItemModelView.swift */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
 		DE5B922229F78EE60027C8A8 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +116,11 @@
 		DE5B922D29F78EE60027C8A8 /* ExpireMate */ = {
 			isa = PBXGroup;
 			children = (
+				DE5946702A930AA300E7003D /* Modules */,
+				DEDC0F1C2A1D0B9E0027D9FB /* ViewModel */,
+				DEDC0F192A1D0A630027D9FB /* Model */,
+				DEDC0F182A1D09BE0027D9FB /* ExpireMate.entitlements */,
+				DE5B922E29F78EE60027C8A8 /* ExpireMateApp.swift */,
 				DE5B926929F8C0230027C8A8 /* View */,
 				DE5B924929F79C830027C8A8 /* Helper */,
 				DE5B924629F790BE0027C8A8 /* DataModel */,
@@ -101,9 +152,10 @@
 		DE5B924929F79C830027C8A8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DE5B924C29F7AA220027C8A8 /* Notification.swift */,
 				DE5B924E29F7AEA00027C8A8 /* AppDelegate.swift */,
-				DE5B925529F820CF0027C8A8 /* DataScaner.swift */,
+				DEEB161029FE1B5C00206792 /* SceneDelegate.swift */,
+				DE56C6DE2A06C27C00283352 /* Calendar.swift */,
+				DE56C6E02A06C84200283352 /* Category.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -111,12 +163,28 @@
 		DE5B926929F8C0230027C8A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE5B922E29F78EE60027C8A8 /* ExpireMateApp.swift */,
-				DE5B923029F78EE60027C8A8 /* ContentView.swift */,
 				DE5B924229F78F080027C8A8 /* Home.swift */,
-				DE5B924429F78F370027C8A8 /* AddItems.swift */,
+				DE51D52F29FA29D800A47AC3 /* History.swift */,
+				DE56C6DC2A06C23A00283352 /* CalendarView.swift */,
+				DEDC0F4E2A1FAD610027D9FB /* Detail.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DEDC0F192A1D0A630027D9FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC0F1A2A1D0A7C0027D9FB /* ItemListing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEDC0F1C2A1D0B9E0027D9FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC0F1D2A1D0BB60027D9FB /* ItemListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +205,7 @@
 			name = ExpireMate;
 			packageProductDependencies = (
 				DE5B926729F8BFFE0027C8A8 /* CodeScanner */,
+				DEF54F0F2A1214E6005763B1 /* SwiftUICharts */,
 			);
 			productName = ExpireMate;
 			productReference = DE5B922B29F78EE60027C8A8 /* ExpireMate.app */;
@@ -168,6 +237,7 @@
 			mainGroup = DE5B922229F78EE60027C8A8;
 			packageReferences = (
 				DE5B926629F8BFFE0027C8A8 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				DEF54F0E2A1214E6005763B1 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = DE5B922C29F78EE60027C8A8 /* Products */;
 			projectDirPath = "";
@@ -195,14 +265,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE59466F2A8C713A00E7003D /* HomeViewModel.swift in Sources */,
+				DE56C6DD2A06C23A00283352 /* CalendarView.swift in Sources */,
 				DE5B924829F790D10027C8A8 /* DataController.swift in Sources */,
-				DE5B924D29F7AA220027C8A8 /* Notification.swift in Sources */,
-				DE5B925629F820CF0027C8A8 /* DataScaner.swift in Sources */,
 				DE5B923829F78EE60027C8A8 /* Persistence.swift in Sources */,
-				DE5B923129F78EE60027C8A8 /* ContentView.swift in Sources */,
 				DE5B924329F78F080027C8A8 /* Home.swift in Sources */,
+				DE5946732A930AD200E7003D /* HomeView.swift in Sources */,
+				DE51D53029FA29D800A47AC3 /* History.swift in Sources */,
+				DE5946782A93C3B300E7003D /* AddItemModelView.swift in Sources */,
 				DE5B922F29F78EE60027C8A8 /* ExpireMateApp.swift in Sources */,
+				DEDC0F1E2A1D0BB60027D9FB /* ItemListViewModel.swift in Sources */,
+				DE56C6DF2A06C27C00283352 /* Calendar.swift in Sources */,
 				DE5B924529F78F370027C8A8 /* AddItems.swift in Sources */,
+				DEDC0F4F2A1FAD610027D9FB /* Detail.swift in Sources */,
+				DE56C6E12A06C84200283352 /* Category.swift in Sources */,
+				DEEB161129FE1B5C00206792 /* SceneDelegate.swift in Sources */,
+				DEDC0F1B2A1D0A7C0027D9FB /* ItemListing.swift in Sources */,
 				DE5B924F29F7AEA00027C8A8 /* AppDelegate.swift in Sources */,
 				DE5B923B29F78EE60027C8A8 /* ExpireMate.xcdatamodeld in Sources */,
 			);
@@ -330,17 +408,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExpireMate/ExpireMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpireMate/Preview Content\"";
 				DEVELOPMENT_TEAM = PHLTY62QB3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ExpiredMate;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app uses the calendar to reminder expire date";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan text ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,17 +441,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExpireMate/ExpireMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpireMate/Preview Content\"";
 				DEVELOPMENT_TEAM = PHLTY62QB3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ExpiredMate;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app uses the calendar to reminder expire date";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan text ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +501,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		DEF54F0E2A1214E6005763B1 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -422,6 +516,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE5B926629F8BFFE0027C8A8 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		DEF54F0F2A1214E6005763B1 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF54F0E2A1214E6005763B1 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 
