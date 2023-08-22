@@ -11,7 +11,7 @@ import CloudKit
 class ItemsListing: ObservableObject {
     @Published var lists: [ItemListing] = []
 }
-struct ItemListing: Identifiable {
+struct ItemListing: Identifiable , Hashable{
     var id: CKRecord.ID?
     var name: String = ""
     var startDate: Date = Date()

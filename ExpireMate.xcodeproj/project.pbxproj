@@ -14,6 +14,8 @@
 		DE59466F2A8C713A00E7003D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59466E2A8C713A00E7003D /* HomeViewModel.swift */; };
 		DE5946732A930AD200E7003D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5946722A930AD200E7003D /* HomeView.swift */; };
 		DE5946782A93C3B300E7003D /* AddItemModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5946772A93C3B300E7003D /* AddItemModelView.swift */; };
+		DE59467B2A944FF900E7003D /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59467A2A944FF900E7003D /* HistoryViewModel.swift */; };
+		DE59467D2A94578500E7003D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59467C2A94578500E7003D /* CoreDataManager.swift */; };
 		DE5B922F29F78EE60027C8A8 /* ExpireMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B922E29F78EE60027C8A8 /* ExpireMateApp.swift */; };
 		DE5B923329F78EE60027C8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5B923229F78EE60027C8A8 /* Assets.xcassets */; };
 		DE5B923629F78EE60027C8A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5B923529F78EE60027C8A8 /* Preview Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		DE59466E2A8C713A00E7003D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DE5946722A930AD200E7003D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DE5946772A93C3B300E7003D /* AddItemModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemModelView.swift; sourceTree = "<group>"; };
+		DE59467A2A944FF900E7003D /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		DE59467C2A94578500E7003D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		DE5B922B29F78EE60027C8A8 /* ExpireMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpireMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5B922E29F78EE60027C8A8 /* ExpireMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireMateApp.swift; sourceTree = "<group>"; };
 		DE5B923229F78EE60027C8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		DE5946702A930AA300E7003D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DE5946792A94375400E7003D /* History */,
 				DE5946742A93C37500E7003D /* AddItem */,
 				DE5946712A930AC700E7003D /* Home */,
 			);
@@ -95,6 +100,15 @@
 				DE5946772A93C3B300E7003D /* AddItemModelView.swift */,
 			);
 			path = AddItem;
+			sourceTree = "<group>";
+		};
+		DE5946792A94375400E7003D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DE51D52F29FA29D800A47AC3 /* History.swift */,
+				DE59467A2A944FF900E7003D /* HistoryViewModel.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		DE5B922229F78EE60027C8A8 = {
@@ -156,6 +170,7 @@
 				DEEB161029FE1B5C00206792 /* SceneDelegate.swift */,
 				DE56C6DE2A06C27C00283352 /* Calendar.swift */,
 				DE56C6E02A06C84200283352 /* Category.swift */,
+				DE59467C2A94578500E7003D /* CoreDataManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -164,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				DE5B924229F78F080027C8A8 /* Home.swift */,
-				DE51D52F29FA29D800A47AC3 /* History.swift */,
 				DE56C6DC2A06C23A00283352 /* CalendarView.swift */,
 				DEDC0F4E2A1FAD610027D9FB /* Detail.swift */,
 			);
@@ -197,6 +211,7 @@
 				DE5B922729F78EE60027C8A8 /* Sources */,
 				DE5B922829F78EE60027C8A8 /* Frameworks */,
 				DE5B922929F78EE60027C8A8 /* Resources */,
+				DE59467E2A9464ED00E7003D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,6 +275,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE59467E2A9464ED00E7003D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE5B922729F78EE60027C8A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +305,7 @@
 				DE5B924829F790D10027C8A8 /* DataController.swift in Sources */,
 				DE5B923829F78EE60027C8A8 /* Persistence.swift in Sources */,
 				DE5B924329F78F080027C8A8 /* Home.swift in Sources */,
+				DE59467B2A944FF900E7003D /* HistoryViewModel.swift in Sources */,
 				DE5946732A930AD200E7003D /* HomeView.swift in Sources */,
 				DE51D53029FA29D800A47AC3 /* History.swift in Sources */,
 				DE5946782A93C3B300E7003D /* AddItemModelView.swift in Sources */,
@@ -282,6 +318,7 @@
 				DEEB161129FE1B5C00206792 /* SceneDelegate.swift in Sources */,
 				DEDC0F1B2A1D0A7C0027D9FB /* ItemListing.swift in Sources */,
 				DE5B924F29F7AEA00027C8A8 /* AppDelegate.swift in Sources */,
+				DE59467D2A94578500E7003D /* CoreDataManager.swift in Sources */,
 				DE5B923B29F78EE60027C8A8 /* ExpireMate.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

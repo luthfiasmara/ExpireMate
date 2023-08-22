@@ -27,8 +27,13 @@ struct PersistenceController {
         }
         return result
     }()
+    
 
     let container: NSPersistentCloudKitContainer
+    
+    var viewContext: NSManagedObjectContext {
+        return container.viewContext
+    }
 
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "ExpireMate")

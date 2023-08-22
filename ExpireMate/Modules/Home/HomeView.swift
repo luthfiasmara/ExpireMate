@@ -10,73 +10,87 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var homeVM = HomeViewModel()
     var body: some View {
-        VStack{
-            Hero(notYetExpired: $homeVM.notYetExpired, hasExpired: $homeVM.hasExpired, points: $homeVM.points)
-            
-            Spacer().frame(height: 40)
+        
+        if homeVM.status == .loading{
+            VStack{
+                Hero(notYetExpired: $homeVM.notYetExpired, hasExpired: $homeVM.hasExpired, points: $homeVM.points)
+                
+                Spacer().frame(height: 40)
+                Spacer()
+                Text("Loading...")
+                Spacer()
+                
+            }
+        }else if homeVM.status == .error{
+            VStack{
+                Hero(notYetExpired: $homeVM.notYetExpired, hasExpired: $homeVM.hasExpired, points: $homeVM.points)
+                
+                Spacer().frame(height: 40)
+                Spacer()
+                Text("Error! Data not Available")
+                Spacer()
+                
+            }
 
-            List{
-                ForEach(homeVM.records) { itm in
-                    if !itm.isExpired{
-                        HStack{
-                            VStack(alignment: .leading){
-                                
-                                Text(itm.name )
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                                
-                                Text("Expired on \(homeVM.dateString(date: itm.endDate  , format: "dd MMMM yyyy - HH:mm"))")
-                                    .font(.callout)
-                                    .italic()
-                                
-                                
-                                Text(itm.isExpired ? "Past expiry date" : "Not yet expired")
-                                    .font(.caption)
-                                    .foregroundColor(itm.isExpired ? .red : .green)
+        }else{
+            VStack{
+                Hero(notYetExpired: $homeVM.notYetExpired, hasExpired: $homeVM.hasExpired, points: $homeVM.points)
+                
+                Spacer().frame(height: 40)
+
+                List{
+                    ForEach(homeVM.records, id: \.self) { itm in
+                        if !itm.isExpired {
+                            HStack{
+                                VStack(alignment: .leading){
+                                    
+                                    Text(itm.name )
+                                        .font(.headline)
+                                        .fontWeight(.bold)
+                                    
+                                    Text("Expired on \(homeVM.dateString(date: itm.endDate  , format: "dd MMMM yyyy - HH:mm"))")
+                                        .font(.callout)
+                                        .italic()
+                                    
+                                    
+                                    Text(itm.isExpired ? "Past expiry date" : "Not yet expired")
+                                        .font(.caption)
+                                        .foregroundColor(itm.isExpired ? .red : .green)
+                                }
+                                .onAppear {
+                                    homeVM.notificationAlert(item: itm)
+                                }
+    //                            .onReceive(timer) { time in
+    //                                DataController().checkStatusAndUpdate(context: managedObjContext)
+    //                                countTrueData()
+    //                                countFalseData()
+    //
+    //                            }
+                                Spacer()
                             }
-                            .onAppear {
-//                                countTrueData()
-//                                countFalseData()
-                                
-                                let center = UNUserNotificationCenter.current()
-                                let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute ], from: itm.endDate )
-                                
-                                let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-                                
-                                // Create the notification content
-                                let content = UNMutableNotificationContent()
-                                content.title = "Reminder"
-                                content.body = "Your \(itm.name ) expired today"
-                                
-                                
-                                // Create the notification request
-                                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                                
-                                // Schedule the notification
-                                center.add(request)
-                                
-                                
-                            }
-//                            .onReceive(timer) { time in
-//                                DataController().checkStatusAndUpdate(context: managedObjContext)
-//                                countTrueData()
-//                                countFalseData()
-//
-//                            }
-                            Spacer()
+    //                        .onTapGesture{
+    //                            showingDetail.toggle()
+    //                        }
+                            
+                            .listRowBackground(Color.white)
+                            
                         }
-//                        .onTapGesture{
-//                            showingDetail.toggle()
-//                        }
-                        
-                        .listRowBackground(Color.white)
-                        
                     }
-                }.onDelete(perform: homeVM.deleteItem)
-            }  
-            Spacer()
+    //                .onDelete(perform: homeVM.deleteItem)
+                }
+                
+
+                Spacer()
+            }
+            .onAppear {
+                homeVM.fetchData()
+                homeVM.countFalseData()
+                homeVM.countTrueData()
+            }
+
         }
         
+                
     }
 }
 
